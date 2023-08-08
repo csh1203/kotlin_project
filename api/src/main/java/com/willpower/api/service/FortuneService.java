@@ -14,7 +14,7 @@ public class FortuneService {
 
     public Fortune getRandomFortune(){
         // TODO : Fortune 개수만큼 랜덤
-        long randomId = (long) Math.ceil(Math.random() * 3 + 1);
+        long randomId = (long) Math.ceil(Math.random() * 10 + 1);
         return fortuneRepository.findById(randomId)
                 .orElseThrow(() -> new IllegalArgumentException("not found : " + randomId));
     }
