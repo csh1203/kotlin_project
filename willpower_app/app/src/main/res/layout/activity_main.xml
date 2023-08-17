@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center_vertical"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:layout_width="288dp"
+        android:layout_height="80dp"
+        android:text="포춘쿠키로 운세 보기"
+        android:textColor="@color/black"
+        android:background="@drawable/round_button"
+        android:layout_gravity="center"
+        android:gravity="right|center"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:layout_width="288dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="소라고둥님께 조언 듣기"
+        android:background="@drawable/round_button"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="right|center"/>
+
+    <Button
+        android:layout_width="288dp"
+        android:layout_height="80dp"
+        android:text="꽃잎점 보러가기"
+        android:background="@drawable/round_button"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="right|center"/>
+
+</LinearLayout>
