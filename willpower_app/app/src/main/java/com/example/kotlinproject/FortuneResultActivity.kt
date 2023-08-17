@@ -1,9 +1,11 @@
-package com.example.kotlinproject.api.service
+package com.example.kotlinproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.kotlinproject.R
+import android.widget.TextView
+import com.example.kotlinproject.api.service.Fortune
+import com.example.kotlinproject.api.service.FortuneService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -17,6 +19,7 @@ class FortuneResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fortune_result)
 
+        val resultTextView = findViewById<TextView>(R.id.resutl_textview)
         val retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
@@ -29,7 +32,7 @@ class FortuneResultActivity : AppCompatActivity() {
             override fun onResponse(call: Call<Fortune>, response: Response<Fortune>) {
                 val dto = response.body() as Fortune
                 dto?.let {
-                    Log.d("mytag", dto.content) // 포춘쿠키 결과
+                    resultTextView.text = dto.content // 포춘쿠키 결과
                 }
             }
 
