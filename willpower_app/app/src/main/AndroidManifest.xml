@@ -22,6 +22,9 @@
             android:name=".conch.MagicConchActivity"
             android:exported="false" />
         <activity
+            android:name=".conch.MagicConchWaitActivity"
+            android:exported="false" />
+        <activity
             android:name=".fortune.FortuneResultActivity"
             android:exported="true" />
         <activity

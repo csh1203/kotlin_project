@@ -14,28 +14,29 @@
         android:layout_height="80dp"
         android:text="포춘쿠키로 운세 보기"
         android:textColor="@color/black"
-        android:background="@drawable/round_button"
+        android:background="@drawable/main_round_button"
         android:layout_gravity="center"
-        android:gravity="right|center"/>
+        android:gravity="center"/>
 
     <Button
+        android:id="@+id/conch_button"
         android:layout_width="288dp"
         android:layout_height="80dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="32dp"
         android:text="소라고둥님께 조언 듣기"
-        android:background="@drawable/round_button"
+        android:background="@drawable/main_round_button"
         android:textColor="@color/black"
         android:layout_gravity="center"
-        android:gravity="right|center"/>
+        android:gravity="center"/>
 
     <Button
         android:layout_width="288dp"
         android:layout_height="80dp"
         android:text="꽃잎점 보러가기"
-        android:background="@drawable/round_button"
+        android:background="@drawable/main_round_button"
         android:textColor="@color/black"
         android:layout_gravity="center"
-        android:gravity="right|center"/>
+        android:gravity="center"/>
 
 </LinearLayout>

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.kotlinproject.conch.MagicConchActivity
 import com.example.kotlinproject.fortune.FortuneActivity
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,14 @@ class MainActivity : AppCompatActivity() {
         // 버튼 누르면 각각의 화면으로 가기
         fortuneButton.setOnClickListener{
             val intent = Intent(this, FortuneActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        val conchButton = findViewById<Button>(R.id.conch_button)
+
+        conchButton.setOnClickListener {
+            val intent = Intent(this, MagicConchActivity::class.java)
             startActivity(intent)
         }
 

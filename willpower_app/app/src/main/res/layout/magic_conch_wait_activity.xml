@@ -13,7 +13,6 @@
         android:gravity="center">
 
         <ImageView
-            android:id="@+id/conch_img"
             android:layout_width="204dp"
             android:layout_height="204dp"
             android:src="@drawable/conch" />
@@ -21,26 +20,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="소라고둥님께 질문하기"
+            android:text="소라고둥님이 생각 중..."
             android:gravity="center"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_marginTop="70px"/>
 
-        <EditText
-            android:layout_width="288dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="36dp" />
-
-        <Button
-            android:id="@+id/conch_ask_button"
-            android:layout_width="220dp"
-            android:layout_height="70dp"
-            android:text="질문하기"
-            android:backgroundTint="@color/button_back"
-            android:textColor="@color/white"
-            android:layout_marginTop="54dp" />
 
     </LinearLayout>
 
