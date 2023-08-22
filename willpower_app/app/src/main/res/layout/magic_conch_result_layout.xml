@@ -5,12 +5,11 @@
     android:gravity="center"
     android:orientation="vertical">
 
-
     <ImageView
-        android:id="@+id/fortune_img"
+        android:id="@+id/conch_img"
         android:layout_width="204dp"
         android:layout_height="204dp"
-        android:src="@drawable/fortune_cookie" />
+        android:src="@drawable/conch" />
 
     <TextView
         android:id="@+id/resutl_textview"
