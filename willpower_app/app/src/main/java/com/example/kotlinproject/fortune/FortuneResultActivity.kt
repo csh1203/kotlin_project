@@ -1,9 +1,10 @@
-package com.example.kotlinproject
+package com.example.kotlinproject.fortune
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
+import com.example.kotlinproject.R
 import com.example.kotlinproject.api.service.Fortune
 import com.example.kotlinproject.api.service.FortuneService
 import retrofit2.Call
@@ -17,7 +18,7 @@ class FortuneResultActivity : AppCompatActivity() {
     val BASE_URL = "http://10.0.2.2:8080"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fortune_result)
+        setContentView(R.layout.fortune_result_layout)
 
         val resultTextView = findViewById<TextView>(R.id.resutl_textview)
         val retrofit = Retrofit.Builder()
