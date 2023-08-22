@@ -21,4 +21,13 @@
         android:textColor="@color/black"
         android:textSize="20sp" />
 
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:text="뒤로가기"
+        android:backgroundTint="@color/button_back"
+        android:textColor="@color/white"
+        android:layout_marginTop="54dp" />
+
 </LinearLayout>

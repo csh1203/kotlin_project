@@ -1,9 +1,12 @@
 package com.example.kotlinproject.fortune
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
+import com.example.kotlinproject.MainActivity
 import com.example.kotlinproject.R
 import com.example.kotlinproject.api.service.Fortune
 import com.example.kotlinproject.api.service.FortuneService
@@ -42,5 +45,12 @@ class FortuneResultActivity : AppCompatActivity() {
             }
 
         })
+
+        val backButton = findViewById<Button>(R.id.back_button)
+
+        backButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
