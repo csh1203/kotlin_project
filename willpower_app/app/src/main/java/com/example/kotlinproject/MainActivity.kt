@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.kotlinproject.fortune.FortuneActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         // 버튼 누르면 각각의 화면으로 가기
         fortuneButton.setOnClickListener{
-            val intent = Intent(this, FortuneCookie::class.java)
+            val intent = Intent(this, FortuneActivity::class.java)
             startActivity(intent)
         }
 
